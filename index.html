@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101116">
+  <title>Studio JES | Jouw radio, jouw muziek</title>
+  <meta name="description" content="Luister naar Studio JES en kijk mee met onze live-uitzendingen.">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101116;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #292a33;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: #12c8c4; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #12c8c4; }
+
+    .hero {
+      min-height: 440px;
+      padding: 100px 8%;
+      background:
+        radial-gradient(ellipse at 85% 20%, #44236a 0, transparent 38%),
+        radial-gradient(ellipse at 15% 90%, #075957 0, transparent 38%),
+        #171820;
+    }
+
+    .label {
+      color: #12c8c4;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1;
+      margin: 22px 0;
+    }
+
+    h1 span { color: #12c8c4; }
+
+    .hero p {
+      color: #c5c6d0;
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 16px 24px;
+      background: #12c8c4;
+      color: #101116;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover { background: white; }
+
+    main section { padding: 45px 8%; }
+
+    h2 { font-size: 25px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 25px;
+      background: #1b1c25;
+      border: 1px solid #30313b;
+      border-radius: 10px;
+    }
+
+    .card p {
+      color: #b9bac6;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 25px 8%;
+      border-top: 1px solid #292a33;
+      color: #999ba8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 18px 5%; }
+      nav a { margin-left: 10px; font-size: 12px; }
+      .hero { padding: 75px 6%; }
+      main section { padding: 35px 6%; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">STUDIO <span>JES</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#programmering">Programmering</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="label">JOUW RADIO. JOUW MUZIEK.</div>
+      <h1>DIT IS<br><span>STUDIO JES.</span></h1>
+      <p>Jouw favoriete muziek, radio en live-uitzendingen.
+         Beleef Studio JES, waar je ook bent.</p>
+      <a class="button"
+         href="https://www.twitch.tv/"
+         target="_blank"
+         rel="noopener noreferrer">
+        ▶ KIJK LIVE OP TWITCH
+      </a>
+    </section>
+
+    <section id="programmering">
+      <h2>Ontdek Studio JES</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>📻 Live radio</h3>
+          <p>Luister naar de uitzendingen van Studio JES.</p>
+        </div>
+        <div class="card">
+          <h3>🎥 Visual radio</h3>
+          <p>Kijk mee in de studio tijdens onze live-uitzendingen.</p>
+        </div>
+        <div class="card">
+          <h3>🎙️ Onze dj's</h3>
+          <p>Ontdek wie er achter de microfoon zit.</p>
+        </div>
+        <div class="card">
+          <h3>📅 Programmering</h3>
+          <p>Bekijk binnenkort wanneer je favoriete programma te horen is.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Een vraag of een muziekverzoek? Neem contact op met Studio JES.</p>
+      <a class="button" href="mailto:">MAIL STUDIO JES</a>
+    </section>
+  </main>
+
+  <footer>© 2027 Studio JES · Alle rechten voorbehouden</footer>
+</body>
+</html>
